@@ -1,0 +1,65 @@
+body{
+    background: url(../../images/main-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+form.container{
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 40%;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.next{
+    width: 30%;
+    margin-left: 35%;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 35px;
+    padding: 7px;
+    cursor: pointer;
+    transition: 0.3s all ease;
+    margin-top: 10px;
+}
+
+.next:hover{
+
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+
+
+    
+}
+
+.error{
+    margin-left: 7.5%;
+    color: rgb(255, 132, 132);
+    font-size: 0.8rem;
+}
+
+@media(max-width: 932px){
+    form.container{
+        width: 60%;
+    }
+}
+
+@media(max-width: 676px){
+    form.container{
+        width: 75%;
+    }
+}
+@media(max-width: 525px){
+    form.container{
+        width: 80%;
+    }
+}

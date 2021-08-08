@@ -1,0 +1,17 @@
+input.val{
+    width: 85%;
+    margin-left: 7.5%;
+    margin-bottom: 10px;
+    outline: none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 3px solid rgb(192, 192, 192);
+    padding: 10px;
+    transition: 0.5s all ease-in-out;
+}
+
+input.val:focus, .disease-controller input:focus{
+    color: black;
+    border-bottom: 3px solid black;
+}

@@ -1,0 +1,28 @@
+.container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.Holder{
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+    padding: 20px
+}
+
+@media(max-width: 700px){
+    .container{
+        align-items: center;
+        flex-direction: column;
+    }
+    .Holder{
+        width: 90%;
+    }
+}
+
+@media(max-width: 330px){
+    .Holder{
+        font-size: 0.7rem;
+    }
+}
