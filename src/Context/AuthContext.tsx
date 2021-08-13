@@ -1,4 +1,4 @@
-import React, { ReactElement, useState } from "react";
+import React, { ReactElement, useEffect, useState } from "react";
 
 interface AuthInterface {
   loginId: string | null;
@@ -13,18 +13,21 @@ export const AuthContext = React.createContext<AuthInterface>({
 });
 
 function AuthContextProvider(props: { children: ReactElement }) {
-  const [loginId, setLoginId] = useState(localStorage.getItem("loginId"));
+  const [loginId, setLoginId] = useState(localStorage.getItem("loginId")||"");
 
   const login = (authId: string, cb: () => void) => {
-    localStorage.setItem("loginId", authId);
-    setLoginId(loginId);
+    setLoginId(authId);
     cb();
   };
+
+  useEffect(() => {
+    localStorage.setItem("loginId", loginId)
+  }, [loginId])
 
   const logout = () => {
     localStorage.removeItem("loginId");
     localStorage.removeItem("verified");
-    setLoginId(null);
+    setLoginId("");
   };
 
   const value: AuthInterface = {

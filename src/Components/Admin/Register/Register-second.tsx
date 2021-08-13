@@ -1,16 +1,11 @@
 import React from "react";
-import { LoginProps } from "../../../Types/interfaces";
-import Input from "../../UI/Input"
+import Input from "../../UI/Input";
+import { RegisterAuthProps } from "../../../Types/interfaces";
 
-function Login(props: LoginProps) {
-  
+function RegisterSecond(props: RegisterAuthProps) {
   return (
-    <div>
-      <h1 style={{ color: "white", textAlign: "center", marginTop: "30px" }}>
-        CALL THE DOCTOR
-      </h1>
-      <form className="container" onSubmit={props.submit}>
-        <h2 style={{ textAlign: "center" }}>Admin Login</h2>
+    <>
+      <div>
         <Input
           placeholder="Email"
           value={props.email.inputValue}
@@ -33,13 +28,27 @@ function Login(props: LoginProps) {
             Length of the password must be greater than 6
           </div>
         )}
-        {props.message && <div className="error">{props.message}</div>}
-        <button className="next" type="submit">
-          {props.sending ? "Sending..." : "Login"}
-        </button>
-      </form>
-    </div>
+      </div>
+      {props.message === "Admin added successfully." ? (
+        <div className="success">{props.message + " Wait For the Verification"}</div>
+      ) : (
+        <div className="error">{props.message}</div>
+      )}
+
+      <button
+        className="next"
+        type="button"
+        onClick={() => {
+          props.setSecond();
+        }}
+      >
+        Back
+      </button>
+      <button className="next" type="submit">
+        {props.sending ? "Sending..." : "SignUp"}
+      </button>
+    </>
   );
 }
 
-export default Login;
+export default RegisterSecond;

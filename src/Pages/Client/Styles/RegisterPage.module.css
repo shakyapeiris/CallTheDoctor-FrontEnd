@@ -1,0 +1,61 @@
+
+
+.diseasesContainer{
+    margin-top: 10px;
+    width: 85%;
+    margin-left: 7.5%;
+}
+
+.diseases{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.disease{
+    background-color: gray;
+    color: white;
+    padding: 5px;
+    border-radius: 35px;
+    font-size: 0.7rem;
+    font-weight: lighter;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    width: 30%;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.diseaseController input{
+    width: 65%;
+    margin-bottom: 10px;
+    outline: none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 3px solid rgb(192, 192, 192);
+    padding: 10px;
+    transition: 0.5s all ease-in-out;
+}
+
+.diseaseController button{
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+.diseaseController button:hover{
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    
+
+}

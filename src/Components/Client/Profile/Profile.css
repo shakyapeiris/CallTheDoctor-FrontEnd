@@ -1,0 +1,72 @@
+body{
+    background: url(../../../images/main-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container2{
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 40%;
+    margin: 10px auto;
+}
+
+a.lin{
+    color: black;
+    text-decoration: none;
+    width: 60%;
+}
+
+.diseases-container2{
+    margin-top: 10px;
+}
+
+.diseases{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+.disease{
+    background-color: gray;
+    color: white;
+    padding: 5px;
+    border-radius: 35px;
+    font-size: 0.7rem;
+    font-weight: lighter;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    width: 30%;
+    text-align: center;
+    margin-top: 5px;
+}
+
+@media(max-width: 932px){
+    .container2{
+        width: 60%;
+    }
+}
+
+@media(max-width: 676px){
+    .container2{
+        width: 75%;
+    }
+}
+@media(max-width: 525px){
+    .container2{
+        width: 90%;
+    }
+}
+
+@media(max-width: 368px){
+    .container2{
+        width: 98%;
+    }
+}

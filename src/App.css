@@ -3,6 +3,16 @@
   margin: 0%;
   padding: 0%;
 }
+.container{
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 40%;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
 a{
   text-decoration: none;
@@ -19,4 +29,47 @@ a{
   margin-left: 7.5%;
   color: rgb(132, 255, 153);
   font-size: 0.8rem;
+}
+
+.next{
+  width: 30%;
+  margin-left: 35%;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 35px;
+  padding: 7px;
+  cursor: pointer;
+  transition: 0.3s all ease;
+  margin-top: 10px;
+}
+
+.next:hover{
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+
+
+@media(max-width: 932px){
+  .container{
+      width: 60%;
+  }
+}
+
+@media(max-width: 676px){
+  .container{
+      width: 75%;
+  }
+}
+@media(max-width: 525px){
+  .container{
+      width: 90%;
+  }
+}
+
+@media(max-width: 368px){
+  .container{
+      width: 98%;
+  }
 }

@@ -1,0 +1,23 @@
+.Container{
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 100%;
+    margin: 10px auto;
+}
+
+.BlackContainer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 90%;
+    margin: 10px auto;
+}
+
+.mapClasses {
+    position:absolute; 
+    top:0; 
+    bottom:0; 
+    width:100%;
+    }
