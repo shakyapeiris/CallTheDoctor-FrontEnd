@@ -10,8 +10,8 @@
 <p align="center">
   <img width="600" height="300" src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/622/078/datas/gallery.jpg?raw=true">
 </p>
-<p> Call the Doctor is a PWA which was developed in order to help people. Through this app people can log in to our application and if he/ she feel uncomfortable in road/ home/ any other place. That person can goto our web app press the huge red button in the home page. If that user has no time to login, then he can click the SOS button in landing page. But if patient misuse the service with that ability a fine will be charged from the user and will take some strict actions against that person.</p>
-<p> After that a notification will be send to the nearest hospital/ medical team in the real time with the help of pusher service. Then that medical team will come and help the patient. If user has already logged in to the webiste then doctors can treat that user according to past records and health issues that person has.</p>
+<p> Call the Doctor is a PWA that was developed to help people. Through this app, people can log in to our application and if they feel uncomfortable on the road/ home/ any other place, that person can go to our web app press the huge red button on the home page. If that user has no time to log in, then he can click the SOS button on the landing page. But if patient misuse the service with that ability a fine will be charged from the user and will take some strict actions against that person.</p>
+<p> After that a notification will be sent to the nearest hospital/ medical team in real-time with the help of pusher service. Then that medical team will come and help the patient. If the user has already logged in to the website then doctors can treat that user according to past records and health issues that person has.</p>
 
 ### Technologies used in this project
 *Note: You can checkout the backend code of this project via: https://github.com/shakyapeiris/CallTheDoctor-BackEnd.git*
